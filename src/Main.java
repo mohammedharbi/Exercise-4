@@ -28,11 +28,14 @@ public class Main {
 //        string: xof nworb kciuq ehT
 
 //
-//        System.out.println("Type a string to be reversed: ");
-//        String nametoreverse = input.nextLine();
-//        StringBuilder revst = new StringBuilder(nametoreverse);
-//
-//        System.out.println(revst.reverse());
+        System.out.println("Type a string to be reversed: ");
+           String word = input.nextLine();
+           String revword = "";
+
+           for (int i = (word.length() - 1); i >=0; --i) {
+               revword +=word.charAt(i);
+           }
+               System.out.println(revword);
 
 //        3.Write a program to find the factorial value of any number entered
 //        through the keyboard.
